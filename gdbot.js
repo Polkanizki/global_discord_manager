@@ -147,9 +147,3 @@ client.on('message', message => {
 		}
 	}
 });
-
-client.on('message', message => {
-	if(message.content == 'Prova') {
-		message.channel.send('Questa è una prova');
-	}
-});
