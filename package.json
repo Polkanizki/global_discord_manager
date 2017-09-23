@@ -1,0 +1,13 @@
+{
+    "name": "global_discord_manager",
+    "description": "Nothing",
+    "version": "1.0.0",
+    "main": "gdbot.js",
+    "scripts": {
+        "start": "node gdbot.js"
+    },
+    "dependencies": {
+        "discord.js": "11.2.1",
+        "request": "2.81.0"
+    }
+}
