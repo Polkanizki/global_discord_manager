@@ -69,6 +69,7 @@ client.on('message', message => {
 			var tipo = server[0];
 			var nome = server[1];
 			var descrizione = server[2];
+			var membri = server[4];
 			if(server[3].startsWith('https://discord.gg/')) {
 				var link = server[3];
 			} else if(server[3].startsWith('discord.gg/')) {
@@ -76,7 +77,6 @@ client.on('message', message => {
 			} else {
 				var link = 'Link non disponibile';
 			}
-			var membri = server[4];
 			if (message.channel.id == '359658704670425098' || message.channel.id == '359663809180467200') {
 				message.delete();
 				message.channel.send({embed: {
