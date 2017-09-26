@@ -17,7 +17,7 @@ var admin = '187657725407264768';
 client.on('ready', () => {
     console.log(`${client.user.tag} loggato su ${client.guilds.size} server con ${client.channels.size} canali e ${client.users.size} utenti totali`);
     client.user.setPresence({ game: {
-        name: `Monitoring ${client.guilds.size} servers ~Polkanizki`, type: 0
+        name: `${client.users.size} users on server ~Polkanizki`, type: 0
     }});
 });
 
