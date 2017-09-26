@@ -137,8 +137,6 @@ client.on('message', message => {
 	}
 });
 
-
-
 //2° metodo | Work In Progress
 /*client.on('guildCreate', guild => {
 	if(message.guild.id != '359476597440512010') {
@@ -148,5 +146,13 @@ client.on('message', message => {
 		var nome = guild.name;
 		var dataCreazione = guild.createdTimestamp;
 		
+	}
+});*/
+
+//Notifica per categoria | Work In Progress
+/*client.on('message', message => {
+	if(server[1] == 'Community') {
+		let notifica = message.guild.roles.find("name", "Community");
+		if()
 	}
 });*/
