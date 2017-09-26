@@ -147,3 +147,15 @@ client.on('message', message => {
 		}
 	}
 });
+
+//2° metodo | Work In Progress
+client.on('guildCreate', guild => {
+	if(message.guild.id != '359476597440512010') {
+		guild.owner.send('Prova');
+		var invito = guild.defaultChannel.createInvite();
+		var membri = guild.members;
+		var nome = guild.name;
+		var dataCreazione = guild.createdTimestamp;
+		
+	}
+});
