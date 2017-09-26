@@ -66,15 +66,16 @@ client.on('message', message => {
 		if (message.content.startsWith('!spam')) {
 			var spam = message.content.split('-');
 			var server = spam[1].split(';');
-			var nome = server[0];
-			var tipo = server[1];
+			var tipo = server[0];
+			var nome = server[1];
 			var descrizione = server[2];
 			var membri = server[4];
-			var link = 'https://discord.gg/'+ server[3];
 			if(server[3].startsWith('discord.gg')) {
 				var link = 'https://'+ server[3];
 			} else if(server[3]. startsWith('https://discord.gg')) {
 				var link = server[3];
+			} else {
+				var link = 'https://discord.gg/'+ server[3];
 			}
 			if (message.channel.id == '359658704670425098' || message.channel.id == '359663809180467200') {
 				message.delete();
