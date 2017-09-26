@@ -72,7 +72,7 @@ client.on('message', message => {
 			var membri = server[4];
 			if(server[3].startsWith('discord.gg')) {
 				var link = 'https://'+ server[3];
-			} else if(server[3]. startsWith('https://discord.gg')) {
+			} else if(server[3]. startsWith('https://discord.gg/')) {
 				var link = server[3];
 			} else {
 				var link = 'https://discord.gg/'+ server[3];
