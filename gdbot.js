@@ -140,96 +140,11 @@ client.on('message', message => {
 				}});
 			}
 			//message.channel.send(server);
-		} else {
-			if (message.channel.id == '359658704670425098' || message.channel.id == '359658782751457290') {
-				message.delete();
-			} return;
 		}
 	}
 });
 
-//!spam 2
 
-/*client.on('message', message => {
-	if(!message.guild) return;
-	if(message.guild.id == '359476597440512010') {
-		if (message.content.startsWith('!spam')) {
-			var spam = message.content.split('-');
-			var server = spam[1].split(';');
-			var nome = server[0];
-			var tipo = server[1];
-			var descrizione = server[2];
-			var membri = server[4];
-			if(server[3].startsWith('https://discord.gg') || server[3].startsWith(' https://discord.gg')) {
-				var link = server[3];
-			} else {
-				var link = 'Link non disponibile';
-			}
-			if(message.channel.id == '359658704670425098' || message.channel.id == '359663809180467200') {
-				message.delete();
-				message.channel.send({embed: {
-					color: 3447003,
-					author: {
-						name: message.author.username,
-						icon_url: message.author.avatarURL
-					},
-					title: `${nome} ← Clicca per entrare`,
-					url: `${link}`,
-					fields: [{
-						name: "Argomento server",
-						value: `${tipo}`
-					},
-					{
-						name: "Descrizione",
-						value: `${descrizione}`,
-						inline: true
-					},
-					{
-						name: "Utenza attuale",
-						value: `${membri} membri`,
-						inline: true
-					}
-					],
-					footer: {
-						icon_url: 'https://cdn.discordapp.com/attachments/314060737993768961/360086190436646914/globaldiscordlogo.png',
-						text: `Global Discord | ${ore}:${minuti} del giorno ${giorno} ${mesi[mese]} ${anno}`
-					}
-				}});
-			} else if(message.channel.id == '359658782751457290' || message.channel.id == '359663809180467200') {
-				message.delete();
-				message.channel.send({embed: {
-					color: 3447003,
-					author: {
-						name: message.author.username,
-						icon_url: message.author.avatarURL
-					},
-					title: `${nome} ← Click to join`,
-					url: `${link}`,
-					fields: [{
-						name: "Server argument",
-						value: `${tipo}`
-					},
-					{
-						name: "Description",
-						value: `${descrizione}`,
-						inline: true
-					},
-					{
-						name: "Actually members",
-						value: `${membri} members`,
-						inline: true
-					}
-					],
-					timestamp: new Date(),
-					footer: {
-						icon_url: 'https://cdn.discordapp.com/attachments/314060737993768961/360086190436646914/globaldiscordlogo.png',
-						text: 'Global Discord'
-					}
-				}});
-			}
-		}
-	}
-});*/
 
 //2° metodo | Work In Progress
 client.on('guildCreate', guild => {
