@@ -70,12 +70,7 @@ client.on('message', message => {
 			var tipo = server[1];
 			var descrizione = server[2];
 			var membri = server[4];
-			var link = 'https://discord.gg/'+ server[3];
-			if(server[3].startsWith('discord.gg')) {
-				var link = 'https://'+ server[3];
-			} else if(server[3]. startsWith('https://discord.gg')) {
-				var link = server[3];
-			}
+			var link = server[3];
 			if (message.channel.id == '359658704670425098' || message.channel.id == '359663809180467200') {
 				message.delete();
 				message.channel.send({embed: {
