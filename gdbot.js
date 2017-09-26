@@ -69,9 +69,9 @@ client.on('message', message => {
 			var tipo = server[0];
 			var nome = server[1];
 			var descrizione = server[2];
-			if(server[3].startsWith(' https://discord.gg/')) {
+			if(server[3].startsWith('https://discord.gg/')) {
 				var link = server[3];
-			} else if(server[3].startsWith(' discord.gg/')) {
+			} else if(server[3].startsWith('discord.gg/')) {
 				var link = 'https://' + server[3];
 			} else {
 				var link = 'Link non disponibile';
@@ -147,7 +147,7 @@ client.on('message', message => {
 
 
 //2° metodo | Work In Progress
-client.on('guildCreate', guild => {
+/*client.on('guildCreate', guild => {
 	if(message.guild.id != '359476597440512010') {
 		guild.owner.send('Prova');
 		var invito = guild.defaultChannel.createInvite();
@@ -156,4 +156,4 @@ client.on('guildCreate', guild => {
 		var dataCreazione = guild.createdTimestamp;
 		
 	}
-});
+});*/
