@@ -66,8 +66,8 @@ client.on('message', message => {
 		if (message.content.startsWith('!spam')) {
 			var spam = message.content.split('-');
 			var server = spam[1].split(';');
-			var tipo = server[0];
-			var nome = server[1];
+			var nome = server[0];
+			var tipo = server[1];
 			var descrizione = server[2];
 			var membri = server[4];
 			var link = 'https://discord.gg/'+ server[3];
