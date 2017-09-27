@@ -21,6 +21,18 @@ client.on('ready', () => {
     }});
 });
 
+client.on('guildMemberAdd', () => {
+	client.user.setPresence({ game: {
+		name: `${client.users.size} users on server ~Polkanizki`, type: 0
+	}});
+});
+
+client.on('guildMemberRemove', () => {
+	client.user.setPresence({ game: {
+		name: `${client.users.size} users on server ~Polkanizki`, type: 0
+	}});
+});
+
 client.on('reconnecting', () => {
     console.log("Errore di connessione. Riconnessione in corso...");
 });
