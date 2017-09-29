@@ -133,6 +133,8 @@ client.on('message', message => {
 					}
 				}});
 			}
+		} else {
+			message.delete();
 		}
 	}
 });
