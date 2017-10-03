@@ -17,7 +17,7 @@ var admin = '187657725407264768';
 client.on('ready', () => {
     console.log(`${client.user.tag} loggato su ${client.guilds.size} server con ${client.channels.size} canali e ${client.users.size} utenti totali`);
     client.user.setPresence({ game: {
-        name: `Manage Global Discord ~Polkanizki`, type: 0
+        name: `~Polkanizki`, type: 0
     }});
 });
 
@@ -134,7 +134,7 @@ client.on('message', message => {
 				}});
 			}
 		} else if(message.content.startsWith("!")) {
-			message.delete();
+			message.delete('3000');
 		}
 	}
 });
