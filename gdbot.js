@@ -133,7 +133,7 @@ client.on('message', message => {
 					}
 				}});
 			}
-		} else {
+		} else if(message.content.startsWith("!")) {
 			message.delete();
 		}
 	}
