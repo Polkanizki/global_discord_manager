@@ -139,6 +139,12 @@ client.on('message', message => {
 	}
 });
 
+client.on('message', message => {
+	if(message.content.startsWith('https://') || message.content.startsWith('discord.gg')) {
+		messsage.delete();
+	} 
+});
+
 //2° metodo | Work In Progress
 /*client.on('guildCreate', guild => {
 	if(message.guild.id != '359476597440512010') {
